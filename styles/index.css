@@ -20,9 +20,14 @@ body{
     font-family: sans-serif;
     background-color: black;
 }
+
+.basic-text{
+    font-size: 10px;
+}
+
 .top-banner-container{
     margin: 0;
-    padding-top: 20px !important;
+    padding-top: 10px !important;
     background-color: black;
 }
 
@@ -35,24 +40,16 @@ body{
 }
 
 .basic-container{
-    padding: 50px 100px;
+    padding: 20px 10px;
     background-color: black;
 }
 
-
-@media(min-width: 1280px){
-    .basic-container{
-        padding: 50px 200px;
-    }
-}
 
 .fixed-header{
     position: sticky;
     top: 0;
     left: 0;
     z-index: 100;
-    padding: 0 100px;
-
 }
 
 .header-nav{
@@ -60,15 +57,17 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-    height: 60px;
+    height: 30px;
     width: 100%;
-    text-shadow: 5px 5px 0 black;
+    background-color: black;
+    padding-bottom: 10px;
 }
 
 .header-nav a>h1{
     color: white !important;
     font-weight: 700;
     z-index: 100;
+    font-size: 9px;
 }
 
 .top-video-container{
@@ -109,7 +108,7 @@ body{
 }
 
 .video-banner-headline{
-    font-size: 150px;
+    font-size: 40px;
     font-weight: 700;
     text-shadow: 20px 20px 0 black;
     color: white !important;
@@ -135,3 +134,157 @@ body{
     text-decoration: underline;
 }
 
+
+
+@media(min-width: 640px){
+
+    .basic-text{
+        font-size: 100%;
+    }
+
+    .top-banner-container{
+        margin: 0;
+        padding-top: 20px !important;
+        background-color: black;
+    }
+    
+    .slider-container{
+        background-color: black; 
+    }
+    
+    .top-banner{
+        width: 100%;
+    }
+    
+    .basic-container{
+        padding: 50px 70px;
+        background-color: black;
+    }
+    
+    .fixed-header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        padding: 0 100px;
+    
+    }
+    
+    .header-nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-end;
+        height: 60px;
+        width: 100%;
+        background-color: transparent;
+        text-shadow: 5px 5px 0 black;
+    }
+    
+    .header-nav a>h1{
+        color: white !important;
+        font-weight: 700;
+        z-index: 100;
+        font-size: 13px;
+    }
+    
+    .top-video-container{
+        position: relative;
+        max-width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .main-trailer{
+        display: block;
+        min-width: 100%;
+        z-index: 0;
+        margin-bottom: -3px;
+        margin: 0 auto;
+    }
+    
+    .video-overlay{
+        display: grid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: calc(100% + 1px);
+        width: 100%;
+        background-color: rgba(0,0,0, 0.5);
+        z-index: 50;
+        grid-template-rows: repeat(1fr);
+    }
+    
+    .overlay-headline{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: logo-font, sans-serif;
+    }
+    
+    .video-banner-headline{
+        font-size: 70px;
+        font-weight: 700;
+        text-shadow: 20px 20px 0 black;
+        color: white !important;
+        z-index: 1000;
+    }
+    
+    .overlay-subline{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .vimeo-link-subline{
+        text-decoration: none;
+        color: white !important;
+        line-height: 2;
+    }
+    
+    .vimeo-link-subline:hover{
+        text-decoration: underline;
+    }
+    
+    
+}
+
+@media(min-width:960px){
+    .header-nav a>h1{
+        color: white !important;
+        font-weight: 700;
+        z-index: 100;
+        font-size: 100%;
+    }
+    .basic-container{
+        padding: 50px 100px;
+    }
+    .video-banner-headline{
+        font-size: 120px;
+        font-weight: 700;
+        text-shadow: 20px 20px 0 black;
+        color: white !important;
+        z-index: 1000;
+    }
+}
+
+
+
+@media(min-width: 1280px){
+    .basic-container{
+        padding: 50px 200px;
+    }
+    .video-banner-headline{
+        font-size: 150px;
+        font-weight: 700;
+        text-shadow: 20px 20px 0 black;
+        color: white !important;
+        z-index: 1000;
+    }
+}
