@@ -80,7 +80,7 @@ body{
 
 .main-trailer{
     display: block;
-    max-width: 100%;
+    min-width: 100%;
     z-index: 0;
     margin-bottom: -3px;
     margin: 0 auto;
